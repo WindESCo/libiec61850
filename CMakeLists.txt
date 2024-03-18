@@ -7,6 +7,8 @@ if(DEFINED ENV{TOOLCHAIN})
     set(CMAKE_AR	"$ENV{TOOLCHAIN}ar" CACHE FILEPATH "CW archiver" FORCE)
 endif()
 
+set(CMAKE_CXX_STANDARD 11)
+
 project(libiec61850)
 ENABLE_TESTING()
 
@@ -194,5 +196,3 @@ if(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")
 
     include(CPack)
 endif(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")
-
-
