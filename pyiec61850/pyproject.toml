@@ -1,0 +1,16 @@
+[project]
+name = "iec61850"
+version = "1.5"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}
+
+[tools.setuptools]
+packages = ["iec61850"]
+
+[tool.setuptools.package-data]
+iec61850 = ["_iec61850.so"]
